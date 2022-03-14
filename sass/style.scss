@@ -1,6 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif:ital@1&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,600&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@400;700&display=swap');
 
 // Variables
 $font-family-one: 'Montserrat', sans-serif;
 $font-family-two: 'PT Serif', serif;
 $font-family-three: 'Roboto Slab', serif;
+$color-one: #fff;
+$color-two: #fed136;
+$color-three: #000;
+
+// Global
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: $font-family-one;
+}
+
+a {
+    text-decoration: none;
+    color: $color-one;
+    font-weight: bold;
+}
+
+
+
+// Header
+header {
+    position: relative;
+}
+
+.header-img {
+    background-image: url("https://i.postimg.cc/tgFQT0Tk/background.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 700px;
+    position: relative;
+}
+
+.header-img::before { 
+    opacity: 0.3;
+    background: $color-three;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+h1 {
+    font-family: $font-family-one;
+    color: $color-one;
+    font-size: 75px;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+}
+
+h2 {
+    color: $color-one;
+    font-family: $font-family-two;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0 0 50px 0;
+}
+
+.splash {
+    align-items: center;
+    margin: 160px 0;
+}
+
+.button-header {
+    height: 65px;
+    width: 200px;
+    background-color: $color-two;
+    border: 1px solid $color-two;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}

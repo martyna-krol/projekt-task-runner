@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,600&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,600&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@400;700&display=swap');
 
 // Variables
 $font-family-one: 'Montserrat', sans-serif;
 $font-family-two: 'PT Serif', serif;
 $font-family-three: 'Roboto Slab', serif;
+$font-family-four: 'Luxurious Script', cursive;
 $color-one: #fff;
 $color-two: #fed136;
 $color-three: #000;
+$transition: all 1s;
 
 // Global
 
@@ -22,9 +24,42 @@ a {
     font-weight: bold;
 }
 
+// Navigation
 
+nav {
+    padding: 50px 0 0 0;
+}
+
+.navbar-brand a {
+    font-family: $font-family-four;
+    color: $color-two;
+    font-size: 35px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.center {
+    align-content: center;
+    align-items: center;
+}
+
+li a:hover {
+    color: $color-two;
+}
 
 // Header
+
 header {
     position: relative;
 }
@@ -40,7 +75,7 @@ header {
 }
 
 .header-img::before { 
-    opacity: 0.3;
+    opacity: 0.4;
     background: $color-three;
     content: "";
     display: block;
@@ -73,7 +108,7 @@ h2 {
     margin: 160px 0;
 }
 
-.button-header {
+.btn {
     height: 65px;
     width: 200px;
     background-color: $color-two;
@@ -81,4 +116,23 @@ h2 {
     border-radius: 5px;
     font-weight: 700;
     cursor: pointer;
+    background-position: 100% 0; 
+    background-size: 300%;
+    transition: $transition;
+    
+}
+
+.btn:hover {
+    background-position: 0 100%;
+}
+
+.btn-one {
+    border-color: $color-two;
+    color: $color-one;
+    background-image: linear-gradient(90deg, $color-one 50%, transparent 50%);
+}
+
+.btn-one:hover { 
+    color: $color-three;        // nie dziala zmiana koloru fontu
+    border-color: $color-one;  
 }

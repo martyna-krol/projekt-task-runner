@@ -8,6 +8,7 @@ $font-family-four: 'Luxurious Script', cursive;
 $color-one: #fff;
 $color-two: #fed136;
 $color-three: #000;
+$color-four: #777777;
 $transition: all 1s;
 
 // Global
@@ -25,10 +26,19 @@ a {
 }
 
 .section-title {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 40px;
     font-family: $font-family-one;
     color: $color-three;
+    margin: 120px auto 20px auto;
+}
+
+.section-subtitle {
+    font-style: italic;
+    font-family: $font-family-two;
+    color: $color-four;
+    font-size: 16px;
+    margin: 0 auto;
 }
 
 // Navigation
@@ -97,7 +107,7 @@ h1 {
     font-family: $font-family-one;
     color: $color-one;
     font-size: 75px;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0 0 50px 0;
 }
 
@@ -124,7 +134,7 @@ h2 {
     background-color: $color-two;
     border: 1px solid $color-two;
     border-radius: 5px;
-    font-weight: 700;
+    font-weight: 600;
     cursor: pointer;
     background-position: 100% 0; 
     background-size: 300%;
@@ -145,4 +155,33 @@ h2 {
 .btn-one:hover { 
     color: $color-three;
     border-color: $color-one;  
+}
+
+// Services
+
+.roboto {
+    font-family: $font-family-three;
+    color: $color-four;
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box {
+    margin: 75px 25px;
+}
+
+.icon {
+    height: 75px;
+}
+
+.icon i {
+    font-size: 40px;
+    color: $color-two;
+    border: 3px solid $color-two;
+    border-radius: 50%;
+    padding: 10px;
 }

@@ -109,6 +109,9 @@ h2 {
 }
 
 .btn {
+    display: block;
+    margin: 0 auto;
+    line-height: 65px;
     height: 65px;
     width: 200px;
     background-color: $color-two;
@@ -133,6 +136,6 @@ h2 {
 }
 
 .btn-one:hover { 
-    color: $color-three;        // nie dziala zmiana koloru fontu
+    color: $color-three;
     border-color: $color-one;  
 }

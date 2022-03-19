@@ -54,6 +54,10 @@ h5 {
     margin: 10px auto;
 }
 
+.container {
+    max-width: 940px;
+}
+
 // Navigation
 
 nav {
@@ -235,4 +239,43 @@ h2 {
 
 .sign {
     padding: 15px;
+}
+
+// Footer
+
+footer {
+    margin: 0; 
+}
+
+.page-footer ul {
+    list-style-type: none; 
+    text-align: center;
+    margin: 48px auto;
+}
+
+.page-footer ul li {
+    font-size: 0; 
+    display: inline-block;
+    margin: 3px;
+}
+
+.page-footer i {
+    font-size: 20px;   
+    background: $color-three;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: $color-one;
+    border-radius: 50%;
+    text-align: center;
+    transition: $transition;
+}
+
+.page-footer i:hover {
+    transform: scale(1.2);
+}
+
+.copyright {
+    position: absolute;
+    font-size: 14px;
 }

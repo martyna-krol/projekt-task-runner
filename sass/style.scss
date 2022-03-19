@@ -45,6 +45,13 @@ section {
     color: $color-four;
     font-size: 16px;
     margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px auto;
 }
 
 // Navigation
@@ -171,14 +178,8 @@ h2 {
     font-size: 14px;
 }
 
-h5 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
 .box {
-    margin: 75px 25px 0;
+    margin: 0 25px;
 }
 
 .icon {
@@ -195,8 +196,43 @@ h5 {
     color: $color-two;
 }
 
+.description {
+    margin-top: 20px;
+}
+
 // Portfolio
 
 .portfolio {
     background-color: $color-five;
+}
+
+.sign-portfolio {
+    color: $color-four;
+    font-family: $font-family-two;
+    font-size: 14px;
+    margin: 0;
+}
+
+.box2 {
+    width: 300px;
+    height: 400px;
+    background-color: $color-one;
+    margin: 0 35px 50px;
+    padding: 0;
+}
+
+.box-img {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+}
+
+.box-img img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.sign {
+    padding: 15px;
 }

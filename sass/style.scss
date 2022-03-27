@@ -221,7 +221,7 @@ h2 {
     width: 300px;
     height: 400px;
     background-color: $color-one;
-    
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -279,4 +279,61 @@ footer {
 .copyright {
     font-size: 14px;
     margin: 60px auto;
+}
+
+.footer-item {
+    padding: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .splash {
+        margin: 100px 0;
+    }
+
+}
+
+@media (max-width: 767px) {
+    
+    nav {
+        padding: 20px 0 0 0;
+    }
+
+    .navbar-nav {
+        padding: 20px 0 0 0;
+    }
+
+    .splash {
+        margin: 100px 0;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin: 0 0 50px 0;
+    }
+    
+    h2 {
+        font-size: 35px;
+        margin: 0 0 50px 0;
+    }
+
+    .page-footer ul {
+        margin: 20px auto;
+    }
+
+    .copyright {
+        margin: 20px auto;
+        font-size: 10px;
+    }
+
+    .flex-footer {
+        flex-direction: column-reverse;
+    }
+}    
+
+@media (max-width: 400px) {
+
+    .header-img {
+        height: 900px;
+    }
 }
